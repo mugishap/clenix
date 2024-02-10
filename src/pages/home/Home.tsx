@@ -3,6 +3,7 @@ import Footer from '@/components/footer/Footer'
 import Navbar from '@/components/navbar/Navbar'
 import { offers, qualities } from '@/constants'
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { BiCheck, BiRightArrowAlt } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 
@@ -10,6 +11,9 @@ const Home: React.FC = () => {
   return (
     <div className='flex flex-col min-h-screen bg-secondary-gray'>
       <Navbar />
+      <Helmet>
+        <title>Home | T-ZZO</title>
+      </Helmet>
       <div className='w-full min-h-[calc(100vh_-_20vh)] flex flex-col items-center relative justify-start pt-44' id='home-bg'>
         <span className='text-primary-yellow text-xl font-semibold my-8'>THE BEST CLEANING SERVICE EVER!</span>
         <span className='font-extrabold text-white text-7xl'>We Are Certified Company</span>
@@ -65,9 +69,9 @@ const Home: React.FC = () => {
               }
             </div>
             <button className='bg-primary-yellow hover:bg-secondary-blue text-secondary-blue hover:text-white px-8 py-3 rounded-lg font-semibold text-lg my-4'>
-            Take Our Service
-            <BiRightArrowAlt className='text-2xl inline ml-2' />
-          </button>
+              Take Our Service
+              <BiRightArrowAlt className='text-2xl inline ml-2' />
+            </button>
           </div>
         </div>
       </div>
