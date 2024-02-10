@@ -14,7 +14,7 @@ export const navbarLinks: INavbarLink[] = [
         label: "Home"
     },
     {
-        href: "/about",
+        href: "/about-us",
         label: "About"
     },
     {
@@ -26,7 +26,7 @@ export const navbarLinks: INavbarLink[] = [
         label: "Blog"
     },
     {
-        href: "/contact",
+        href: "/contact-us",
         label: "Contact Us"
     }
 ]

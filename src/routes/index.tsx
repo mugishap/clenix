@@ -1,4 +1,5 @@
 
+import NotFound from '@/pages/404/NotFound';
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 const ContactUs = React.lazy(() => import('@/pages/contact/Contact'))
@@ -12,6 +13,7 @@ const PagesRouter: React.FC<{}> = () => {
         <Route path="/about-us" element={<About />} />
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
