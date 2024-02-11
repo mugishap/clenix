@@ -6,6 +6,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { BiCheck, BiRightArrowAlt, BiShareAlt } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
+import { Plane, Subscribe1, Subscribe2, Subscribe3, Subscribe4 } from '../../assets'
 
 const Home: React.FC = () => {
   return (
@@ -130,16 +131,16 @@ const Home: React.FC = () => {
         <div className='w-full grid grid-cols-3'>
           {
             plans.map((plan, index) => (
-              <div className='mx-auto my-2 w-11/12 flex flex-col items-center bg-white pb-14 rounded-b-lg' key={index}>
-                <div className='bg-primary-blue flex flex-col w-full relative items-center rounded-lg p-4 py-16' id='clip'>
+              <div className='group cursor-pointer mx-auto my-2 w-11/12 flex flex-col items-center bg-white pb-4 rounded-b-lg' key={index}>
+                <div className='group-hover:bg-primary-blue bg-secondary-blue flex flex-col w-full relative items-center rounded-lg p-4 py-16' id='clip'>
                   <span className='flex items-center text-white'>
                     <span>$</span>
                     <span className='text-6xl font-semibold'>{plan.price}</span>
                     <span>/mo</span>
                   </span>
                 </div>
-                <div className='relative w-full flex flex-col items-center pt-10'>
-                  <button className="bg-secondary-blue px-8 py-3 rounded-xl text-white capitalize text-lg absolute -top-12 z-30">{plan.name} PLAN</button>
+                <div className='relative w-full flex flex-col items-center py-10'>
+                  <button className="group-hover:bg-secondary-blue bg-primary-blue px-8 py-3 rounded-xl text-white capitalize text-lg absolute -top-12 z-30">{plan.name} PLAN</button>
                   {
                     plan.offers.map((offer, index) => (
                       <div className='flex items-center my-2' key={index}>
@@ -147,12 +148,44 @@ const Home: React.FC = () => {
                       </div>
                     ))
                   }
+                  <button className='bg-primary-yellow mt-4 px-8 py-3 text-secondary-blue group-hover:text-white group-hover:bg-secondary-blue'>
+                    BOOK NOW
+                  </button>
                 </div>
               </div>
             ))
           }
         </div>
       </div>
+      <div className='w-full py-[70px] pb-[65px] flex bg-[#0989ff] relative items-center justify-center'>
+            <div>
+                <img className='absolute z-[1] opacity-[0.4] top-0 left-0 mix-blend-luminosity max-w-full' src={Subscribe1} alt="" />
+                <img className='absolute z-[1] opacity-[0.4] top-[53%] left-[10%] mix-blend-luminosity' src={Subscribe2} alt="" />
+                <img className='absolute z-[1] opacity-[0.4] bottom-[10%] left-[12%]' src={Subscribe3} alt="" />
+                <img className='absolute z-[1] -top-[5%] right-[12%]' src={Subscribe4} alt="" />
+                <div className='absolute z-[1] top-[24%] right-[17%] h-[110px] w-[399px]'>
+                    <img src={Plane} className='absolute -top-[34%] -left-[6%]' alt="" />
+                    <svg width="399" height="110" className="absolute top-0 left-0 hidden md:flex" viewBox="0 0 399 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.499634 1.00049C8.5 20.0005 54.2733 13.6435 60.5 40.0005C65.6128 61.6426 26.4546 130.331 15 90.0005C-9 5.5 176.5 127.5 218.5 106.5C301.051 65.2247 202 -57.9188 344.5 40.0003C364 53.3997 384 22 399 22" stroke="white" strokeOpacity="0.5" strokeDasharray="3 3"></path>
+                    </svg>
+                    <svg className="absolute -top-2 left-0 md:hidden" width="324" height="210" viewBox="0 0 193 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1C4.85463 20.0046 26.9085 13.6461 29.9086 40.0095C32.372 61.6569 13.5053 130.362 7.98637 90.0217C-3.57698 5.50061 85.7981 127.53 106.034 106.525C145.807 65.2398 98.0842 -57.9337 166.742 40.0093C176.137 53.412 185.773 22.0046 193 22.0046" stroke="white" strokeOpacity="0.5" strokeDasharray="3 3"></path>
+                    </svg>
+                </div>
+            </div>
+            <div className='w-11/12 md:w-10/12 lg:w-8/12 z-[2] flex flex-col lg:flex-row items-center justify-around'>
+                <div className='flex flex-col w-full lg:w-1/2 text-white justify-center'>
+                    <span className='my-2'>SALE 20% OFF</span>
+                    <span className='font-extrabold text-4xl text-white'>Subscribe to our Newsletter</span>
+                </div>
+                <div className='flex w-full lg:w-1/2 items-center justify-end'>
+                    <div className='w-11/12 md:w-8/12 flex lg:mt-0 mt-6'>
+                        <input type="text" className='w-11/12 outline-none border-none rounded-l-lg p-4' placeholder='Enter your email here' />
+                        <button className='p-4 rounded-r-lg text-white cursor-pointer bg-[#010f1c]'>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
       <Footer />
     </div>
   )
