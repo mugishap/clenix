@@ -1,15 +1,15 @@
 import { HomeCleaning } from '@/assets'
 import Footer from '@/components/footer/Footer'
 import Navbar from '@/components/navbar/Navbar'
-import { offers, qualities } from '@/constants'
+import { offers, qualities, services, team } from '@/constants'
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { BiCheck, BiRightArrowAlt } from 'react-icons/bi'
+import { BiCheck, BiRightArrowAlt, BiShareAlt } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 
 const Home: React.FC = () => {
   return (
-    <div className='flex flex-col min-h-screen bg-secondary-gray'>
+    <div className='flex flex-col min-h-screen bg-white'>
       <Navbar />
       <Helmet>
         <title>Home | T-ZZO</title>
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
         <div className='absolute -bottom-28 w-full flex items-center justify-center gap-x-12'>
           {
             qualities.map((quality, index) => (
-              <div key={index} className='group hover:bg-primary-blue w-1/5 p-6 mx-2 flex flex-col bg-white items-center py-12'>
+              <div key={index} className='group shadow-lg hover:bg-primary-blue w-1/5 p-6 mx-2 flex flex-col bg-white items-center py-12'>
                 <quality.icon size={64} className='hover:text-white group-hover:text-white text-primary-blue' />
                 <span className='font-bold text-2xl my-4 group-hover:text-white text-secondary-blue group'>{quality.head}</span>
                 <span className='my-4 group-hover:text-white text-primary-gray'>{quality.description}</span>
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
           }
         </div>
       </div>
-      <div className='w-full flex flex-col px-24 pt-32 bg-white'>
+      <div className='w-full flex flex-col px-24 pt-44 bg-white'>
         <div className='w-full flex items-center'>
           <div className='w-6/12 flex items-center justify-end'>
             <img src={HomeCleaning} alt="" className='w-8/12' />
@@ -74,6 +74,59 @@ const Home: React.FC = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className='bg-primary-blue px-44 py-24 my-12 flex flex-col items-center'>
+        <span className='my-4 font-semibold text-lg text-primary-yellow'>Our Services</span>
+        <span className='font-bold text-4xl text-center text-white'>
+          Our Residential & Commercial
+          <br></br>
+          Cleaning Services
+        </span>
+        <div className='w-full grid grid-cols-4 my-8'>
+          {
+            services.map((service, index) => (
+              <div key={index} className='hover:bg-secondary-blue cursor-pointer group w-11/12 bg-white rounded-lg p-2 py-6 my-3 mx-auto flex flex-col items-center'>
+                <div className='group-hover:bg-primary-yellow bg-primary-blue w-24 h-24 rounded-full flex justify-center items-center'>
+                  <service.icon size={40} className='text-white group-hover:text-secondary-blue' />
+                </div>
+                <span className='my-6 font-bold text-2xl text-secondary-blue group-hover:text-white'>{service.title}</span>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <div className='bg-white py-24 px-44 flex flex-col items-center'>
+        <span className='font-bold text-xl text-primary-blue my-4'>Our Working Experts</span>
+        <span className='font-bold text-4xl text-secondary-blue my-4 text-center'>
+          Meet Our Team of Expert
+          <br></br>
+          Cleaning Staff
+        </span>
+        <div className='w-full grid grid-cols-3'>
+          {
+            team.map((member, index) => (
+              <div className='group w-11/12 mx-auto flex flex-col my-3 bg-secondary-gray p-4 rounded-lg items-center' key={index}>
+                <div className='w-full flex justify-between'>
+                  <div className='flex flex-col'>
+                    <span className='font-bold text-2xl text-secondary-blue my-1'>{member.name}</span>
+                    <span className='my-1 text-primary-gray'>Office Cleaner</span>
+                  </div>
+                  <span className='w-12 h-12 flex items-center justify-center group-hover:bg-primary-yellow bg-secondary-blue/30 text-secondary-blue rounded-full'>
+                    <BiShareAlt size={24} />
+                  </span>
+                </div>
+                <img src={member.image} className='w-10/12 group-hover:scale-110' alt="" />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <div className='bg-secondary-gray py-24 px-44 flex flex-col items-center'>
+        <span className='font-bold text-xl my-4 text-primary-blue'>Pricing Plan</span>
+        <span className='my-4 font-bold text-3xl text-secondary-blue'>
+          Choose Your Affordable <br></br>
+          Pricing Plan
+        </span>
       </div>
       <Footer />
     </div>

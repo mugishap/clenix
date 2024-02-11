@@ -1,3 +1,4 @@
+import { Team1, Team2, Team3 } from "@/assets";
 import { INavbarLink } from "@/types";
 import { BiCalendarPlus, BiDiamond } from "react-icons/bi";
 import { FaHandshake, FaPaintRoller } from "react-icons/fa";
@@ -127,4 +128,25 @@ export const process = [
         head: "Enjoy Happy!",
         description: "Ahen an unknown printer took a galley type and nknown printer."
     },
+]
+
+export const team = [
+    {
+        image: Team1,
+        name: "Richard Powell"
+    },
+    {
+        image: Team2,
+        name: "Ashley Riordan"
+    },
+    {
+        image: Team3,
+        name: "Clemens Steiner"
+    },
+]
+
+export const plans = [
+    {
+        
+    }
 ]
