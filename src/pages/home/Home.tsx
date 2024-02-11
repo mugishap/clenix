@@ -1,7 +1,7 @@
 import { HomeCleaning } from '@/assets'
 import Footer from '@/components/footer/Footer'
 import Navbar from '@/components/navbar/Navbar'
-import { offers, qualities, services, team } from '@/constants'
+import { offers, plans, qualities, services, team } from '@/constants'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { BiCheck, BiRightArrowAlt, BiShareAlt } from 'react-icons/bi'
@@ -123,10 +123,35 @@ const Home: React.FC = () => {
       </div>
       <div className='bg-secondary-gray py-24 px-44 flex flex-col items-center'>
         <span className='font-bold text-xl my-4 text-primary-blue'>Pricing Plan</span>
-        <span className='my-4 font-bold text-3xl text-secondary-blue'>
+        <span className='my-4 font-bold text-3xl text-center text-secondary-blue'>
           Choose Your Affordable <br></br>
           Pricing Plan
         </span>
+        <div className='w-full grid grid-cols-3'>
+          {
+            plans.map((plan, index) => (
+              <div className='mx-auto my-2 w-11/12 flex flex-col items-center bg-white pb-14 rounded-b-lg' key={index}>
+                <div className='bg-primary-blue flex flex-col w-full relative items-center rounded-lg p-4 py-16' id='clip'>
+                  <span className='flex items-center text-white'>
+                    <span>$</span>
+                    <span className='text-6xl font-semibold'>{plan.price}</span>
+                    <span>/mo</span>
+                  </span>
+                </div>
+                <div className='relative w-full flex flex-col items-center pt-10'>
+                  <button className="bg-secondary-blue px-8 py-3 rounded-xl text-white capitalize text-lg absolute -top-12 z-30">{plan.name} PLAN</button>
+                  {
+                    plan.offers.map((offer, index) => (
+                      <div className='flex items-center my-2' key={index}>
+                        <span className='text-primary-gray ml-1'>{offer.name}</span>
+                      </div>
+                    ))
+                  }
+                </div>
+              </div>
+            ))
+          }
+        </div>
       </div>
       <Footer />
     </div>

@@ -147,6 +147,66 @@ export const team = [
 
 export const plans = [
     {
-        
+        name: "BASIC",
+        price: "19",
+        offers: [
+            {
+                name: "2 Bedrooms Cleaning",
+            },
+            {
+                name: "Vacuming",
+            },
+            {
+                name: "2 Bathroom Cleaning",
+            },
+            {
+                name: "Window Cleaning",
+            },
+            {
+                name: "1 Livingroom Cleaning",
+            },
+        ]
+    },
+    {
+        name: "STANDARD",
+        price: "39",
+        offers: [
+            {
+                name: "3 Bedrooms Cleaning",
+            },
+            {
+                name: "Vacuming",
+            },
+            {
+                name: "2 Bathroom Cleaning",
+            },
+            {
+                name: "Window Cleaning",
+            },
+            {
+                name: "1 Livingroom Cleaning",
+            },
+        ]
+    },
+    {
+        name: "PREMIUM",
+        price: "49",
+        offers: [
+            {
+                name: "4 Bedrooms Cleaning",
+            },
+            {
+                name: "Vacuming",
+            },
+            {
+                name: "2 Bathroom Cleaning",
+            },
+            {
+                name: "Window Cleaning",
+            },
+            {
+                name: "1 Livingroom Cleaning",
+            },
+        ]
     }
 ]
