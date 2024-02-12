@@ -57,8 +57,7 @@ const Home: React.FC = () => {
               We Have Over 30+ Years of Experiences on Cleaning Area with Successful Projects
             </span>
             <span className='text-primary-gray my-6'>
-              Perspiciatis unde omnis iste natus error sit voluptatem accusantium dummy doloremque laudantium totam remeaque. Perspiciatis unde omnis iste natus error sit The voluptatem accusantiumeomnis iste natus error sit voluptatem doloremque totam remeaque.
-            </span>
+              T-ZZO Inc. est une entreprise privée qui offre des services de hautes qualités d’entretien ménager, de nettoyage et de la conciergerie aux entreprises commerciales et aux maisons résidentielles partout à Laval, Montréal ainsi que ses environs.             </span>
             <div className='my-4 grid grid-cols-2'>
               {
                 offers.map((offer, index) => (
@@ -148,7 +147,7 @@ const Home: React.FC = () => {
                       </div>
                     ))
                   }
-                  <button className='bg-primary-yellow mt-4 px-8 py-3 text-secondary-blue group-hover:text-white group-hover:bg-secondary-blue'>
+                  <button hidden className='bg-primary-yellow mt-4 px-8 py-3 text-secondary-blue group-hover:text-white group-hover:bg-secondary-blue'>
                     BOOK NOW
                   </button>
                 </div>

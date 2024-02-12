@@ -36,17 +36,17 @@ export const qualities = [
     {
         icon: GrGroup,
         head: 'Expert People',
-        description: 'Business whenknown printer aretook galley of type off and scrambled make type specimen book.Far away the behind the mountains.'
+        description: 'Nos services couvrent entre autres les travaux personnalisés et une variété d’activité d’entretien pour garantir à nos clients un environnement de travail très propre et plus sécuritaire.'
     },
     {
         icon: BiDiamond,
         head: 'Quality Work',
-        description: 'Business whenknown printer aretook galley of type off and scrambled make type specimen book.Far away the behind the mountains.'
+        description: 'Chez T-ZZO Inc. nous savons bien que le temps passe vite, c’est pourquoi nous sommes toujours là pour faciliter la vie de nos clients afin qu’ils puissent en profiter pleinement!'
     },
     {
         icon: FaHandshake,
         head: 'All Satisfaction',
-        description: 'Business whenknown printer aretook galley of type off and scrambled make type specimen book.Far away the behind the mountains.'
+        description: 'Notre mission est d’aller plus loin en offrant des services impeccables à nos clients selon les horaires de leurs choix et au prix très avantageux afin de surpasser leurs attentes. '
     },
 
 ]
