@@ -23,8 +23,8 @@ export const navbarLinks: INavbarLink[] = [
         label: "Services"
     },
     {
-        href: "/blog",
-        label: "Blog"
+        href: "/work-hours",
+        label: "Work Hours"
     },
     {
         href: "/contact-us",
@@ -208,5 +208,43 @@ export const plans = [
                 name: "1 Livingroom Cleaning",
             },
         ]
+    }
+]
+
+export const hours = [
+    {
+        open:"8:00 AM",
+        closes:"6:00 PM",
+        day: "Monday"
+    },
+    {
+        open:"8:00 AM",
+        closes:"6:00 PM",
+        day: "Tuesday"
+    },
+    {
+        open:"8:00 AM",
+        closes:"6:00 PM",
+        day: "Wednesday"
+    },
+    {
+        open:"8:00 AM",
+        closes:"6:00 PM",
+        day: "Thursday"
+    },
+    {
+        open:"8:00 AM",
+        closes:"6:00 PM",
+        day: "Friday"
+    },
+    {
+        open:"10:00 AM",
+        closes:"2:00 PM",
+        day: "Saturday"
+    },
+    {
+        open:"8:00 AM",
+        closes:"2:00 PM",
+        day: "Sunday"
     }
 ]

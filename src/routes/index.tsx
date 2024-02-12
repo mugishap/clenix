@@ -2,6 +2,7 @@
 import MobileNavbar from '@/components/navbar/MobileNavbar';
 import { CommonContext } from '@/context';
 import NotFound from '@/pages/404/NotFound';
+import WorkHours from '@/pages/work-hours/WorkHours';
 import React, { useContext } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 const ContactUs = React.lazy(() => import('@/pages/contact/Contact'))
@@ -19,6 +20,7 @@ const PagesRouter: React.FC<{}> = () => {
         <Route path="/about-us" element={<About />} />
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/work-hours" element={<WorkHours />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
