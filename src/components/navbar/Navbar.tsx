@@ -1,22 +1,27 @@
-import { LogoText } from '@/assets'
+import { Logo, LogoText } from '@/assets'
 import { navbarLinks } from '@/constants'
+import { CommonContext } from '@/context'
 import { INavbarLink } from '@/types'
-import React from 'react'
-import { BiCart, BiSearch } from 'react-icons/bi'
+import React, { useContext } from 'react'
+import { BiCart, BiMenu, BiSearch } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 
 const Navbar: React.FC = () => {
+
+    const { setShowNavbar } = useContext(CommonContext)
+
     return (
-        <div className='flex items-center px-36 bg-white py-2 justify-between'>
-            <img src={LogoText} className='w-64' alt="" />
-            <div className='flex items-center gap-x-4'>
+        <div className='flex items-center px-3 lg:px-10 mplg:px-36 bg-white py-2 justify-between'>
+            <img src={LogoText} className='flex md:hidden smlg:flex w-44 smm:w-64' alt="" />
+            <img src={Logo} className='hidden md:flex smlg:hidden w-14' alt="" />
+            <div className='hidden md:flex items-center gap-x-4'>
                 {
                     navbarLinks.map((link: INavbarLink, index: number) => (
                         <Link to={link.href} key={index} className='hover:text-primary-blue'>{link.label}</Link>
                     ))
                 }
             </div>
-            <div className='flex items-center gap-x-4'>
+            <div className='hidden md:flex items-center gap-x-4'>
                 <span className='w-12 text-primary-blue cursor-pointer h-12 rounded-full hover:bg-primary-blue hover:text-white duration-0 bg-secondary-gray flex items-center justify-center'>
                     <BiSearch size={22} className='duration-0' />
                 </span>
@@ -27,6 +32,7 @@ const Navbar: React.FC = () => {
                     GET A QUOTE
                 </button>
             </div>
+            <BiMenu size={30} className='flex md:hidden cursor-pointer text-secondary-blue' onClick={()=>setShowNavbar(true)} />
         </div>
     )
 }

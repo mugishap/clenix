@@ -11,7 +11,7 @@ export const CommonProvider = ({ children }: any) => {
             showNavbar,
             setShowNavbar
         }}>
-            {children}
+                {children}
         </CommonContext.Provider>
     )
 }
