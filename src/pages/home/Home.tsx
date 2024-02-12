@@ -46,14 +46,14 @@ const Home: React.FC = () => {
           }
         </div>
       </div>
-      <div className='w-full flex flex-col px-10 lg:px-3 bxl:px-24 pt-14 md:pt-72 lg:pt-64 bxl:pt-44 bg-white'>
+      <div className='w-full flex flex-col px-6 smm:px-10 lg:px-3 bxl:px-24 pt-14 md:pt-72 lg:pt-64 bxl:pt-44 bg-white'>
         <div className='w-full flex items-center'>
           <div className='w-6/12 hidden md:flex items-center justify-end'>
             <img src={HomeCleaning} alt="" className='w-full lg:w-8/12' />
           </div>
-          <div className='w-full md:w-6/12 bxl:w-4/12 ml-14 flex flex-col items-start'>
-            <span className='text-primary-blue font-semibold text-xl'>Who we are</span>
-            <span className='my-6 text-secondary-blue font-bold text-4xl'>
+          <div className='w-full md:w-6/12 bxl:w-4/12 md:ml-14 flex flex-col items-start'>
+            <span className='text-primary-blue font-semibold text-base sm:text-lg md:text-xl'>Who we are</span>
+            <span className='my-6 text-secondary-blue font-bold text-lg sm:text-xl md:text-2xl lg:text-4xl'>
               We Have Over 30+ Years of Experiences on Cleaning Area with Successful Projects
             </span>
             <span className='text-primary-gray my-6'>
