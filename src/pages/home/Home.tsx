@@ -58,10 +58,10 @@ const Home: React.FC = () => {
             </span>
             <span className='text-primary-gray my-6'>
               T-ZZO Inc. est une entreprise privée qui offre des services de hautes qualités d’entretien ménager, de nettoyage et de la conciergerie aux entreprises commerciales et aux maisons résidentielles partout à Laval, Montréal ainsi que ses environs.             </span>
-            <div className='my-4 grid grid-cols-2'>
+            <div className='my-4 grid-cols-1 lg:grid-cols-2'>
               {
                 offers.map((offer, index) => (
-                  <div key={index} className='flex items-center mx-3'>
+                  <div key={index} className='flex items-center m-3'>
                     <BiCheck className='text-secondary-blue' size={24} />
                     <span className='text-primary-gray ml-1'>{offer.name}</span>
                   </div>

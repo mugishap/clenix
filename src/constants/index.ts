@@ -53,22 +53,22 @@ export const qualities = [
 
 export const offers = [
     {
-        name: "Experienced Team"
+        name: "Nettoyages des tapis"
     },
     {
-        name: "Duis viverra urna mollis."
+        name: "Vider les corbeilles à déchets"
     },
     {
-        name: "One-off, weekly or fortnightly"
+        name: "Nettoyer les cloisons, les entrées et les sorties"
     },
     {
-        name: "Book, manage & pay online"
+        name: "Le nettoyage des salles de bains ou toilettes"
     },
     {
-        name: "Etiam vel felis cursus purus."
+        name: "Laver les miroirs, le plancher"
     },
     {
-        name: "All in all service"
+        name: "Désinfecter les toilettes et autres"
     },
 ]
 
@@ -213,38 +213,38 @@ export const plans = [
 
 export const hours = [
     {
-        open:"8:00 AM",
-        closes:"6:00 PM",
+        open: "8:00 AM",
+        closes: "9:00 PM",
         day: "Monday"
     },
     {
-        open:"8:00 AM",
-        closes:"6:00 PM",
+        open: "8:00 AM",
+        closes: "9:00 PM",
         day: "Tuesday"
     },
     {
-        open:"8:00 AM",
-        closes:"6:00 PM",
+        open: "8:00 AM",
+        closes: "9:00 PM",
         day: "Wednesday"
     },
     {
-        open:"8:00 AM",
-        closes:"6:00 PM",
+        open: "8:00 AM",
+        closes: "9:00 PM",
         day: "Thursday"
     },
     {
-        open:"8:00 AM",
-        closes:"6:00 PM",
+        open: "8:00 AM",
+        closes: "9:00 PM",
         day: "Friday"
     },
     {
-        open:"10:00 AM",
-        closes:"2:00 PM",
+        open: "10:00 AM",
+        closes: "2:00 PM",
         day: "Saturday"
     },
     {
-        open:"8:00 AM",
-        closes:"2:00 PM",
+        open: "8:00 AM",
+        closes: "2:00 PM",
         day: "Sunday"
     }
 ]
