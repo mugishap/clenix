@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Slide } from "react-awesome-reveal";
-import { Logo } from "../../assets";
+import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
-import { CommonContext } from "../../context";
+import { Logo } from "../../assets";
 
 interface ILink {
     name: string,
@@ -64,77 +64,76 @@ export const GitHub = () => {
 
 const Footer: React.FC = () => {
 
-    const { isLoggedIn } = useContext(CommonContext)
 
     const Community: ILink[] = [
         {
             name: "About Us",
-            path: "/about"
+            path: "#"
         },
         {
             name: "FAQs",
-            path: "/faq"
+            path: "#"
         },
         {
             name: "Careers",
-            path: "/career"
+            path: "#"
         },
         {
             name: "Blog",
-            path: "/blog"
+            path: "#"
         },
     ];
 
     const getStarted: ILink[] = [
         {
             name: "Your Account",
-            path: isLoggedIn ? "/profile" : "/auth/login"
+            path: "#"
         },
         {
             name: "Guidelines",
-            path: "/guidelines"
+            path: "#"
         },
         {
             name: "Quotes",
-            path: "/quotes"
+            path: "#"
         },
         {
             name: "Contact Us",
-            path: "/contact"
+            path: "#"
         },
     ];
 
     const resources: ILink[] = [
         {
             name: "Pricing",
-            path: "/pricing"
+            path: "#"
         },
         {
             name: "Start Selling",
-            path: "/auth/signup"
+            path: "#"
         },
         {
             name: "Help",
-            path: "/help"
+            path: "#"
         },
     ];
 
     const links: ILink[] = [
         {
             name: "Terms of service",
-            path: "/terms"
+            path: "#"
         },
         {
             name: "Privacy Policy",
-            path: "/privacy"
+            path: "#"
         },
         {
             name: "Membership Agreement",
-            path: "/membership"
+            path: "#"
         },
         {
             name: "Sitemap",
-            path: "/location"
+            path: "#"
         },
     ];
     return (
@@ -158,8 +157,9 @@ const Footer: React.FC = () => {
                                 {Community.map((community: ILink, index: number) => {
                                     return (
                                         <Link
+                                            onClick={() => toast.error("This feature is not available yet.")}
                                             to={community.path}
-                                            className={`text-left text-base hover:text-primary-orange leading-none ${window.location.pathname === community.path ? "text-primary-orange" : "text-black"}`}
+                                            className={`text-left text-base hover:text-primary-blue leading-none ${window.location.pathname === community.path ? "text-primary-blue" : "text-black"}`}
                                             key={index}
                                         >
                                             {community.name}
@@ -174,8 +174,9 @@ const Footer: React.FC = () => {
                                 {getStarted.map((text: ILink, index: number) => {
                                     return (
                                         <Link
+                                            onClick={() => toast.error("This feature is not available yet.")}
                                             to={text.path}
-                                            className={`text-left text-base hover:text-primary-orange leading-none ${window.location.pathname === text.path ? "text-primary-orange" : "text-black"}`}
+                                            className={`text-left text-base hover:text-primary-blue leading-none ${window.location.pathname === text.path ? "text-primary-blue" : "text-black"}`}
                                             key={index}
                                         >
                                             {text.name}
@@ -190,8 +191,9 @@ const Footer: React.FC = () => {
                                 {resources.map((text: ILink, index: number) => {
                                     return (
                                         <Link
+                                            onClick={() => toast.error("This feature is not available yet.")}
                                             to={text.path}
-                                            className={`text-left text-base hover:text-primary-orange leading-none ${window.location.pathname === text.path ? "text-primary-orange" : "text-black"}`}
+                                            className={`text-left text-base hover:text-primary-blue leading-none ${window.location.pathname === text.path ? "text-primary-blue" : "text-black"}`}
                                             key={index}
                                         >
                                             {text.name}
@@ -212,8 +214,9 @@ const Footer: React.FC = () => {
                             {links.map((link: ILink, index: number) => {
                                 return (
                                     <Link
+                                        onClick={() => toast.error("This feature is not available yet.")}
                                         to={link.path}
-                                        className="text-base leading-none text-black hover:text-primary-orange"
+                                        className="text-base leading-none text-black hover:text-primary-blue"
                                         key={index}
                                     >
                                         {link.name}
@@ -222,13 +225,13 @@ const Footer: React.FC = () => {
                             })}
                         </div>
                         <div className="flex  justify-start md:justify-end items-start  w-full md:w-auto md:items-center space-x-6 ">
-                            <a href="https://twitter.com/Pre_mugisha" className="text-black hover:text-primary-orange w-6" target={"_blank"}>
+                            <a href="https://twitter.com/Pre_mugisha" className="text-black hover:text-primary-blue w-6" target={"_blank"}>
                                 <Twitter />
                             </a>
-                            <a href="https://web.facebook.com/beni.precieux" className="text-black hover:text-primary-orange w-6" target={"_blank"}>
+                            <a href="https://web.facebook.com/beni.precieux" className="text-black hover:text-primary-blue w-6" target={"_blank"}>
                                 <Facebook />
                             </a>
-                            <a className="text-black hover:text-primary-orange w-6" href="http://github.com/mugishap" target={"_blank"}>
+                            <a className="text-black hover:text-primary-blue w-6" href="http://github.com/mugishap" target={"_blank"}>
                                 <GitHub />
                             </a>
                         </div>

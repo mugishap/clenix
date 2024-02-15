@@ -3,6 +3,7 @@ import { navbarLinks } from '@/constants'
 import { CommonContext } from '@/context'
 import { INavbarLink } from '@/types'
 import React, { useContext } from 'react'
+import toast from 'react-hot-toast'
 import { BiCart, BiMenu, BiSearch } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 
@@ -28,11 +29,13 @@ const Navbar: React.FC = () => {
                 <span className='w-12 text-primary-blue 12 cursor-pointer h-12 rounded-full hover:bg-primary-blue hover:text-white duration-0 bg-secondary-gray flex items-center justify-center'>
                     <BiCart size={22} className='duration-0' />
                 </span>
-                <button className='px-8 py-3 rounded bg-primary-yellow text-black'>
+                <button className='px-8 py-3 rounded bg-primary-yellow text-black'
+                    onClick={() => toast.error('This feature is not available yet.')}
+                >
                     GET A QUOTE
                 </button>
             </div>
-            <BiMenu size={30} className='flex md:hidden cursor-pointer text-secondary-blue' onClick={()=>setShowNavbar(true)} />
+            <BiMenu size={30} className='flex md:hidden cursor-pointer text-secondary-blue' onClick={() => setShowNavbar(true)} />
         </div>
     )
 }

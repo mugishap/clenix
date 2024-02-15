@@ -75,7 +75,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className='bg-primary-blue px-1 msm:px-4 lg:px-10 xl:px-24 bxl:px-44 py-24 my-12 flex flex-col items-center'>
+      <div className='bg-primary-blue px-1 msm:px-4 lg:px-10 xl:px-24 bxl:px-44 py-24 my-12 flex flex-col items-center' id="services">
         <span className='my-4 font-semibold text-lg text-primary-yellow'>Our Services</span>
         <span className='font-bold text-4xl text-center text-white'>
           Our Residential & Commercial
