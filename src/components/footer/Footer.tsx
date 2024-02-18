@@ -67,15 +67,15 @@ const Footer: React.FC = () => {
 
     const Community: ILink[] = [
         {
-            name: "About Us",
+            name: "À propos de nous",
             path: "#"
         },
         {
-            name: "FAQs",
+            name: "FAQ",
             path: "#"
         },
         {
-            name: "Careers",
+            name: "Carrières",
             path: "#"
         },
         {
@@ -86,53 +86,53 @@ const Footer: React.FC = () => {
 
     const getStarted: ILink[] = [
         {
-            name: "Your Account",
+            name: "Votre compte",
             path: "#"
         },
         {
-            name: "Guidelines",
+            name: "Des lignes directrices",
             path: "#"
         },
         {
-            name: "Quotes",
+            name: "Citations",
             path: "#"
         },
         {
-            name: "Contact Us",
+            name: "Contactez-nous",
             path: "#"
         },
     ];
 
     const resources: ILink[] = [
         {
-            name: "Pricing",
+            name: "Tarifs",
             path: "#"
         },
         {
-            name: "Start Selling",
+            name: "Commencer à vendre",
             path: "#"
         },
         {
-            name: "Help",
+            name: "Aide",
             path: "#"
         },
     ];
 
     const links: ILink[] = [
         {
-            name: "Terms of service",
+            name: "Conditions d'utilisation",
             path: "#"
         },
         {
-            name: "Privacy Policy",
+            name: "Politique de confidentialité",
             path: "#"
         },
         {
-            name: "Membership Agreement",
+            name: "Accord d'adhésion",
             path: "#"
         },
         {
-            name: "Sitemap",
+            name: "Plan du site",
             path: "#"
         },
     ];
@@ -152,7 +152,7 @@ const Footer: React.FC = () => {
                         <div className="mt-12 xl:mt-0 grid grid-cols-1 sm:grid-cols-3 gap-y-12 sm:gap-y-0 w-full md:w-auto sm:gap-x-20 md:gap-x-28 xl:gap-8">
                             <div className="sm:w-40 md:w-auto xl:w-72 flex justify-start items-start flex-col space-y-6">
                                 <h2 className="text-base xl:text-xl font-bold xl:font-semibold leading-4 xl:leading-5 text-black">
-                                    Community
+                                    Communauté
                                 </h2>
                                 {Community.map((community: ILink, index: number) => {
                                     return (
@@ -169,7 +169,7 @@ const Footer: React.FC = () => {
                             </div>
                             <div className="sm:w-40 md:w-auto xl:w-72 flex justify-start items-start flex-col space-y-6">
                                 <h2 className="text-base xl:text-xl font-bold xl:font-semibold leading-4 xl:leading-5 text-black">
-                                    Getting Started
+                                    Commencer
                                 </h2>
                                 {getStarted.map((text: ILink, index: number) => {
                                     return (
@@ -206,9 +206,9 @@ const Footer: React.FC = () => {
                     <div className="mt-12 flex  xl:justify-between xl:flex-row flex-col-reverse items-center xl:items-start w-full ">
                         <div className="flex flex-col gap-y-2">
                             <p className="mt-10 md:mt-12 xl:mt-0 text-sm my-2 leading-none text-black">
-                                {(new Date()).getFullYear()} T-ZZO LTD. All Rights Reserved
+                                {(new Date()).getFullYear()} T-ZZO LTD. Tous droits réservés
                             </p>
-                            <p className="mt-10 md:mt-12 xl:mt-0 text-base my-2 leading-none text-black">Powered By <a target="_blank" className="text-blue-600" href={"https://mugishap.pro"}>Mugisha Precieux</a> </p>
+                            {/* <p className="mt-10 md:mt-12 xl:mt-0 text-base my-2 leading-none text-black">Powered By <a target="_blank" className="text-blue-600" href={"https://mugishap.pro"}>Mugisha Precieux</a> </p> */}
                         </div>
                         <div className="mt-10 md:mt-12 xl:mt-0 md:flex-row flex-col flex md:justify-center w-full md:w-auto justify-start items-start space-y-4 md:space-y-0 md:items-center md:space-x-4 xl:space-x-6">
                             {links.map((link: ILink, index: number) => {

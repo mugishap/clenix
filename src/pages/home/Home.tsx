@@ -16,16 +16,16 @@ const Home: React.FC = () => {
         <title>Home | T-ZZO</title>
       </Helmet>
       <div className='w-full min-h-[calc(100vh_-_40vh)] md:min-h-[calc(100vh_-_20vh)] flex flex-col items-center relative justify-start pt-44' id='home-bg'>
-        <span className='text-primary-yellow text-base md:text-xl font-semibold my-8'>THE BEST CLEANING SERVICE EVER!</span>
-        <span className='font-extrabold text-white text-4xl smlg:text-7xl text-center'>We Are Certified Company</span>
+        <span className='text-primary-yellow text-base md:text-xl font-semibold my-8'>LE MEILLEUR SERVICE DE NETTOYAGE JAMAIS!</span>
+        <span className='font-extrabold text-white text-4xl smlg:text-7xl text-center'>Nous sommes une entreprise certifiée</span>
         <div className='flex items-center gap-x-4 my-6'>
-          <button className='bg-primary-yellow hover:bg-white text-secondary-blue px-8 smlg:px-12 py-3 smlg:py-4 rounded-lg font-semibold text-base smlg:text-xl'>
-            Take Our Service
+          <a href="#services" className='bg-primary-yellow hover:bg-white text-secondary-blue px-8 smlg:px-12 py-3 smlg:py-4 rounded-lg font-semibold text-base smlg:text-xl'>
+            Prenez notre service
             <BiRightArrowAlt className='hidden text-2xl sm:inline ml-2' />
-          </button>
-          <Link to="/contact">
+          </a>
+          <Link to="/contact-us">
             <button className='bg-secondary-blue hover:bg-white text-white hover:text-secondary-blue px-8 smlg:px-12 py-3 smlg:py-4 rounded-lg font-semibold hidden mmsm:flex'>
-              Contact Us
+              Contactez-nous
               <BiRightArrowAlt className='hidden text-2xl sm:inline ml-2' />
             </button>
           </Link>
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
                 <span className='font-bold text-2xl my-4 group-hover:text-white text-secondary-blue group'>{quality.head}</span>
                 <span className='my-4 group-hover:text-white text-primary-gray'>{quality.description}</span>
                 <span className='flex items-center my-4 cursor-pointer group-hover:text-white text-secondary-blue'>
-                  Read More
+                  En savoir plus
                   <BiRightArrowAlt className='' />
                 </span>
               </div>
@@ -52,9 +52,9 @@ const Home: React.FC = () => {
             <img src={HomeCleaning} alt="" className='w-full lg:w-8/12' />
           </div>
           <div className='w-full md:w-6/12 bxl:w-4/12 md:ml-14 flex flex-col items-start'>
-            <span className='text-primary-blue font-semibold text-base sm:text-lg md:text-xl'>Who we are</span>
+            <span className='text-primary-blue font-semibold text-base sm:text-lg md:text-xl'>Qui nous sommes</span>
             <span className='my-6 text-secondary-blue font-bold text-lg sm:text-xl md:text-2xl lg:text-4xl'>
-              We Have Over 30+ Years of Experiences on Cleaning Area with Successful Projects
+              Votre source de confiance pour des services de nettoyage de qualité supérieure
             </span>
             <span className='text-primary-gray my-6'>
               T-ZZO Inc. est une entreprise privée qui offre des services de hautes qualités d’entretien ménager, de nettoyage et de la conciergerie aux entreprises commerciales et aux maisons résidentielles partout à Laval, Montréal ainsi que ses environs.             </span>
@@ -69,18 +69,18 @@ const Home: React.FC = () => {
               }
             </div>
             <button className='bg-primary-yellow hover:bg-secondary-blue text-secondary-blue hover:text-white px-8 py-3 rounded-lg font-semibold text-lg my-4'>
-              Take Our Service
+              Prenez notre service
               <BiRightArrowAlt className='text-2xl inline ml-2' />
             </button>
           </div>
         </div>
       </div>
       <div className='bg-primary-blue px-1 msm:px-4 lg:px-10 xl:px-24 bxl:px-44 py-24 my-12 flex flex-col items-center' id="services">
-        <span className='my-4 font-semibold text-lg text-primary-yellow'>Our Services</span>
+        <span className='my-4 font-semibold text-lg text-primary-yellow'>Nos services</span>
         <span className='font-bold text-4xl text-center text-white'>
-          Our Residential & Commercial
+          Nos Résidentiels & Commercials
           <br></br>
-          Cleaning Services
+          Services de nettoyage
         </span>
         <div className='w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-8'>
           {
@@ -96,11 +96,11 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='bg-white py-10 md:py-24 px-2 smlg:px-8 lg:px-20 xl:px-44 flex flex-col items-center'>
-        <span className='font-bold text-base md:text-xl text-primary-blue my-4'>Our Working Experts</span>
+        <span className='font-bold text-base md:text-xl text-primary-blue my-4'>Nos experts en activité</span>
         <span className='font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-secondary-blue my-4 text-center'>
-          Meet Our Team of Expert
+          Rencontrez notre équipe d'experts
           <br></br>
-          Cleaning Staff
+          Personnel de nettoyage
         </span>
         <div className='w-full grid grid-cols-1 dsm:grid-cols-2 smlg:grid-cols-3'>
           {
@@ -109,7 +109,7 @@ const Home: React.FC = () => {
                 <div className='w-full flex justify-between'>
                   <div className='flex flex-col'>
                     <span className='font-bold text-2xl text-secondary-blue my-1'>{member.name}</span>
-                    <span className='my-1 text-primary-gray'>Office Cleaner</span>
+                    <span className='my-1 text-primary-gray'>Nettoyeur de bureau</span>
                   </div>
                   <span className='w-12 h-12 flex items-center justify-center group-hover:bg-primary-yellow bg-secondary-blue/30 text-secondary-blue rounded-full'>
                     <BiShareAlt size={24} />
@@ -122,10 +122,10 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='bg-secondary-gray py-24 px-2 md:px-10 bxl:px-44 flex flex-col items-center'>
-        <span className='font-bold text-base sm:text-xl my-4 text-primary-blue'>Pricing Plan</span>
+        <span className='font-bold text-base sm:text-xl my-4 text-primary-blue'>Plan tarifaire</span>
         <span className='my-4 font-bold text-lg smm:text-xl sm:text-3xl text-center text-secondary-blue'>
-          Choose Your Affordable <br></br>
-          Pricing Plan
+          Choisissez votre plan <br></br>
+          tarifaire abordable
         </span>
         <div className='w-full grid grid-cols-1 smm:grid-cols-2 mlg:grid-cols-3 mlg:gap-y-0 gap-y-4'>
           {
@@ -174,13 +174,13 @@ const Home: React.FC = () => {
         </div>
         <div className='w-11/12 md:w-10/12 lg:w-8/12 z-[2] flex flex-col lg:flex-row items-center justify-around'>
           <div className='flex flex-col w-full lg:w-1/2 text-white justify-center'>
-            <span className='my-2'>SALE 20% OFF</span>
-            <span className='font-extrabold text-4xl text-white'>Subscribe to our Newsletter</span>
+            <span className='my-2'>VENTE 20% DE RÉDUCTION</span>
+            <span className='font-extrabold text-4xl text-white'>Abonnez-vous à notre newsletter</span>
           </div>
           <div className='flex w-full lg:w-1/2 items-center justify-end'>
             <div className='w-11/12 md:w-8/12 flex lg:mt-0 mt-6'>
-              <input type="text" className='w-11/12 outline-none border-none rounded-l-lg p-4' placeholder='Enter your email here' />
-              <button className='p-4 rounded-r-lg text-white cursor-pointer bg-[#010f1c]'>Subscribe</button>
+              <input type="text" className='w-11/12 outline-none border-none rounded-l-lg p-4' placeholder='Entrez votre email ici' />
+              <button className='p-4 rounded-r-lg text-white cursor-pointer bg-[#010f1c]'>S'abonner</button>
             </div>
           </div>
         </div>

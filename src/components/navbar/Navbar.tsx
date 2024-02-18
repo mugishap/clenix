@@ -17,9 +17,13 @@ const Navbar: React.FC = () => {
             <img src={Logo} className='hidden md:flex smlg:hidden w-14' alt="" />
             <div className='hidden md:flex items-center gap-x-4'>
                 {
-                    navbarLinks.map((link: INavbarLink, index: number) => (
-                        <Link to={link.href} key={index} className='hover:text-primary-blue'>{link.label}</Link>
-                    ))
+                    navbarLinks.map((link: INavbarLink, index: number) => {
+                        if (link.href === "#services") {
+                            return (<a href={link.href} key={index} className='hover:text-primary-blue'>{link.label}</a>)
+                        }
+                        return (<Link to={link.href} key={index} className='hover:text-primary-blue'>{link.label}</Link>)
+
+                    })
                 }
             </div>
             <div className='hidden md:flex items-center gap-x-4'>
@@ -32,7 +36,7 @@ const Navbar: React.FC = () => {
                 <button className='px-8 py-3 rounded bg-primary-yellow text-black'
                     onClick={() => toast.error('This feature is not available yet.')}
                 >
-                    GET A QUOTE
+                    OBTENIR UN DEVIS
                 </button>
             </div>
             <BiMenu size={30} className='flex md:hidden cursor-pointer text-secondary-blue' onClick={() => setShowNavbar(true)} />

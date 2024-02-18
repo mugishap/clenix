@@ -12,11 +12,11 @@ import { PiBathtub } from "react-icons/pi";
 export const navbarLinks: INavbarLink[] = [
     {
         href: "/",
-        label: "Home"
+        label: "Accueil"
     },
     {
         href: "/about-us",
-        label: "About"
+        label: "À propos de nous"
     },
     {
         href: "#services",
@@ -24,28 +24,28 @@ export const navbarLinks: INavbarLink[] = [
     },
     {
         href: "/work-hours",
-        label: "Work Hours"
+        label: "Heures de travail"
     },
     {
         href: "/contact-us",
-        label: "Contact Us"
+        label: "Contactez-nous"
     }
 ]
 
 export const qualities = [
     {
         icon: GrGroup,
-        head: 'Expert People',
+        head: 'Des experts',
         description: 'Nos services couvrent entre autres les travaux personnalisés et une variété d’activité d’entretien pour garantir à nos clients un environnement de travail très propre et plus sécuritaire.'
     },
     {
         icon: BiDiamond,
-        head: 'Quality Work',
+        head: 'Travail de qualité',
         description: 'Chez T-ZZO Inc. nous savons bien que le temps passe vite, c’est pourquoi nous sommes toujours là pour faciliter la vie de nos clients afin qu’ils puissent en profiter pleinement!'
     },
     {
         icon: FaHandshake,
-        head: 'All Satisfaction',
+        head: 'Toute satisfaction',
         description: 'Notre mission est d’aller plus loin en offrant des services impeccables à nos clients selon les horaires de leurs choix et au prix très avantageux afin de surpasser leurs attentes. '
     },
 
@@ -75,35 +75,35 @@ export const offers = [
 export const services = [
     {
         icon: GiSpray,
-        title: "Office Cleaning"
+        title: "Nettoyage de bureaux"
     },
     {
         icon: GiHouse,
-        title: "House Cleaning"
+        title: "Nettoyage de la maison"
     },
     {
         icon: GiVacuumCleaner,
-        title: "Floor Cleaning"
+        title: "Nettoyage des sols"
     },
     {
         icon: PiBathtub,
-        title: "Gutter Cleaning"
+        title: "Nettoyage des gouttières"
     },
     {
         icon: FaPaintRoller,
-        title: "Kitchen Cleaning"
+        title: "Nettoyage de cuisine"
     },
     {
         icon: FaToilet,
-        title: "Toilet Cleaning"
+        title: "Nettoyage des toilettes"
     },
     {
         icon: IoBrushOutline,
-        title: "Room Cleaning"
+        title: "Nettoyage de la chambre"
     },
     {
         icon: MdCleaningServices,
-        title: "Window Cleaning"
+        title: "Le nettoyage des vitres"
     },
 ]
 
@@ -151,19 +151,19 @@ export const plans = [
         price: "19",
         offers: [
             {
-                name: "2 Bedrooms Cleaning",
+                name: "2 Nettoyage des chambres",
             },
             {
-                name: "Vacuming",
+                name: "Passe l'aspirateur",
             },
             {
-                name: "2 Bathroom Cleaning",
+                name: "2 Nettoyage de salle de bains",
             },
             {
-                name: "Window Cleaning",
+                name: "Le nettoyage des vitres",
             },
             {
-                name: "1 Livingroom Cleaning",
+                name: "1 Nettoyage du salon",
             },
         ]
     },
@@ -172,19 +172,19 @@ export const plans = [
         price: "39",
         offers: [
             {
-                name: "3 Bedrooms Cleaning",
+                name: "3 Nettoyage des chambres",
             },
             {
-                name: "Vacuming",
+                name: "Passe l'aspirateur",
             },
             {
-                name: "2 Bathroom Cleaning",
+                name: "2 Nettoyage de salle de bains",
             },
             {
-                name: "Window Cleaning",
+                name: "Le nettoyage des vitres",
             },
             {
-                name: "1 Livingroom Cleaning",
+                name: "1 Nettoyage du salon",
             },
         ]
     },
@@ -193,19 +193,19 @@ export const plans = [
         price: "49",
         offers: [
             {
-                name: "4 Bedrooms Cleaning",
+                name: "4 Nettoyage des chambres",
             },
             {
-                name: "Vacuming",
+                name: "Passe l'aspirateur",
             },
             {
-                name: "2 Bathroom Cleaning",
+                name: "2 Nettoyage de salle de bains",
             },
             {
-                name: "Window Cleaning",
+                name: "Le nettoyage des vitres",
             },
             {
-                name: "1 Livingroom Cleaning",
+                name: "1 Nettoyage du salon",
             },
         ]
     }

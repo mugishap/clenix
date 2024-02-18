@@ -28,7 +28,7 @@ const MobileNavbar: React.FC = () => {
                         <BiCart size={22} className='duration-0' />
                     </span>
                     <button className='w-fit px-8 py-3 rounded bg-primary-yellow text-black'>
-                        GET A QUOTE
+                        OBTENIR UN DEVIS
                     </button>
                 </div>
             </div>
