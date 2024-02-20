@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
             <div className='hidden md:flex items-center gap-x-4'>
                 {
                     navbarLinks.map((link: INavbarLink, index: number) => {
-                        if (link.href === "#services") {
+                        if (link.href === "/#services") {
                             return (<a href={link.href} key={index} className='hover:text-primary-blue'>{link.label}</a>)
                         }
                         return (<Link to={link.href} key={index} className='hover:text-primary-blue'>{link.label}</Link>)

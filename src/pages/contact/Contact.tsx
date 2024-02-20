@@ -28,7 +28,7 @@ const Contact = () => {
       <Navbar />
       <Helmet>
         <title>
-          Contact Us | T-ZZO
+          Contactez Nous | T-ZZO
         </title>
       </Helmet>
       <Slide direction="up" cascade triggerOnce>
@@ -41,12 +41,12 @@ const Contact = () => {
               <div className="xl:w-2/5 lg:w-2/5 bg-secondary-blue py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
                 <div className="xl:w-5/6 xl:px-0 px-8 mx-auto">
                   <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold">
-                    Contact Us
+                    Contactez-nous
                   </h1>
                   <p className="text-xl text-white pb-8 leading-relaxed font-normal lg:pr-4">
-                    Got a question about us? Are you interested in partnering with
-                    us? Have some suggestions or just want to say Hi? Just contact
-                    us. We are here to assist you.
+                    Vous avez une question sur nous ? Êtes-vous intéressé à collaborer avec
+                    nous? Vous avez des suggestions ou souhaitez simplement dire bonjour ? Il suffit de contacter
+                    nous. Nous sommes là pour vous aider.
                   </p>
                   <div className="flex pb-4 items-center">
                     <div>
@@ -108,7 +108,7 @@ const Contact = () => {
                   onSubmit={handleSubmit}
                 >
                   <h1 className="text-4xl text-gray-800 font-extrabold mb-6">
-                    Enter Details
+                    Entrez les détails
                   </h1>
                   <div className="block xl:flex w-full flex-wrap justify-between mb-6">
                     <div className="w-2/4 max-w-xs mb-6 xl:mb-0">
@@ -117,7 +117,7 @@ const Contact = () => {
                           htmlFor="full_name"
                           className="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2"
                         >
-                          Full Name
+                          Nom et prénom
                         </label>
                         <input
                           required
@@ -138,7 +138,7 @@ const Contact = () => {
                           htmlFor="email"
                           className="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2"
                         >
-                          Email
+                          E-mail
                         </label>
                         <input
                           required
@@ -161,7 +161,7 @@ const Contact = () => {
                           htmlFor="phone"
                           className="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2"
                         >
-                          Phone
+                          Téléphone
                         </label>
                         <input
                           required
@@ -206,7 +206,7 @@ const Contact = () => {
                       {contactLoading ?
                         <BiLoaderAlt className="animate-spin w-10 text-white" size={25} />
                         :
-                        "Submit"}
+                        "Soumettre"}
                     </button>
                   </div>
                 </form>

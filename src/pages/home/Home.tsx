@@ -13,7 +13,7 @@ const Home: React.FC = () => {
     <div className='flex flex-col min-h-screen bg-white'>
       <Navbar />
       <Helmet>
-        <title>Home | T-ZZO</title>
+        <title>Accueil | T-ZZO</title>
       </Helmet>
       <div className='w-full min-h-[calc(100vh_-_40vh)] md:min-h-[calc(100vh_-_20vh)] flex flex-col items-center relative justify-start pt-44' id='home-bg'>
         <span className='text-primary-yellow text-base md:text-xl font-semibold my-8'>LE MEILLEUR SERVICE DE NETTOYAGE!</span>

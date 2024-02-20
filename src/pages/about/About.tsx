@@ -9,23 +9,23 @@ const AboutUs: React.FC = () => {
         <div className='flex flex-col min-h-screen justify-between'>
             <Navbar />
             <Helmet>
-                <title>About Us | T-ZZO</title>
+                <title>À propos de nous | T-ZZO</title>
             </Helmet>
             <Slide cascade direction="up" triggerOnce>
                 <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
                     <div className="flex lg:flex-row flex-col justify-around lg:gap-8 sm:gap-10 gap-12">
                         <div className="w-full lg:w-6/12">
                             <h2 className="w-full font-bold lg:text-4xl text-3xl lg:leading-10 leading-9">
-                                Revitalize your space with our expert cleaning services. Enjoy the pristine results you deserve.
+                                Revitalisez votre espace avec nos services de nettoyage experts. Profitez des résultats impeccables que vous méritez.
                             </h2>
                             <p className="font-normal text-base leading-6 text-gray-600 mt-6">
-                                T-ZZO: Welcome to our world of pristine spaces and effortless living! Experience the ultimate
-                                convenience with our premier cleaning services. Just as online shopping redefines convenience,
-                                we redefine cleanliness. Say goodbye to the hassle and embrace the joy of a meticulously cleaned
-                                space. Our expert team ensures every nook and cranny is sparkling, delivering a level of
-                                cleanliness that exceeds expectations. With easy booking, flexible scheduling, and top-notch
-                                service, we make maintaining your space a breeze. Join us in this journey toward pristine spaces
-                                and effortless living. Book your appointment today and discover the difference!
+                                T-ZZO : Bienvenue dans notre monde d'espaces immaculés et de vie sans effort ! Vivez l'ultime
+                                commodité avec nos services de nettoyage de premier ordre. Tout comme les achats en ligne redéfinissent la commodité,
+                                nous redéfinissons la propreté. Dites adieu aux tracas et profitez de la joie d'un nettoyage méticuleux
+                                espace. Notre équipe d'experts veille à ce que chaque coin et recoin soit étincelant, offrant un niveau de
+                                une propreté qui dépasse les attentes. Avec une réservation facile, une planification flexible et un service de premier ordre
+                                service, nous faisons de l’entretien de votre espace un jeu d’enfant. Rejoignez-nous dans ce voyage vers des espaces vierges
+                                et une vie sans effort. Prenez rendez-vous aujourd'hui et découvrez la différence!
                             </p>
                         </div>
                         <div className="w-full flex justify-center">
@@ -161,20 +161,19 @@ const AboutUs: React.FC = () => {
                     <div className="grid sm:grid-cols-3 grid-cols-2 sm:gap-8 gap-4">
                         <div>
                             <p className="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 mt-6">
-                                Founded
+                                Fondée
                             </p>
                             <p className="font-normal text-base leading-6 text-gray-600 mt-6">
-                                It is a long established fact that a reader will be distracted by
-                                the readable content of a page when looking at its layout.
+                                Chez T-ZZO, l'expérience en dit long. Fondée avec passion et expertise, nous servons depuis 2022, établissant depuis lors les normes de l'industrie. Faites confiance à notre héritage chez T-ZZO.
                             </p>
                         </div>
                         <div>
                             <p className="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 mt-6">
-                                50M montly enrichments
+                                Meilleur service
                             </p>
                             <p className="font-normal text-base leading-6 text-gray-600 mt-6">
-                                It is a long established fact that a reader will be distracted by
-                                the readable content of a page when looking at its layout.
+                                Chez T-ZZO, l'excellence est notre norme. Nous nous engageons à fournir le meilleur service, adapté
+                                à vos besoins. Découvrez une qualité inégalée avec T-ZZO.
                             </p>
                         </div>
                         <div className="sm:block hidden">
@@ -182,8 +181,7 @@ const AboutUs: React.FC = () => {
                                 400k User
                             </p>
                             <p className="font-normal text-base leading-6 text-gray-600 mt-6">
-                                It is a long established fact that a reader will be distracted by
-                                the readable content of a page when looking at its layout.
+                                Célébrons notre équipe chez T-ZZO. Nos professionnels qualifiés apportent dévouement et expertise à chaque projet. Découvrez l'avantage T-ZZO avec notre équipe exceptionnelle.
                             </p>
                         </div>
                     </div>
@@ -236,8 +234,8 @@ const AboutUs: React.FC = () => {
                                 400k User
                             </p>
                             <p className="font-normal text-base leading-6 text-gray-600 mt-6">
-                                It is a long established fact that a reader will be distracted by
-                                the readable content of a page when looking at its layout.
+                                Célébrons notre équipe chez T-ZZO. Nos professionnels qualifiés apportent dévouement et expertise à
+                                chaque projet. Découvrez l'avantage T-ZZO avec notre équipe exceptionnelle.
                             </p>
                         </div>
                     </div>
@@ -245,22 +243,23 @@ const AboutUs: React.FC = () => {
                     <div className="flex lg:flex-row flex-col md:gap-14 gap-16 justify-between lg:mt-20 mt-16">
                         <div className="w-full lg:w-6/12">
                             <h2 className="font-bold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800">
-                                Our Mission
+                                Notre mission
                             </h2>
                             <p className="font-normal text-base leading-6 text-gray-600 mt-6 w-full lg:w-10/12 xl:w-9/12">
-                                Our mission is to redefine convenience in the realm of cleaning services. We offer a curated
-                                selection of top-quality cleaning solutions, paired with exceptional customer service, prompt and
-                                reliable appointments, and competitive pricing. Our goal is to empower customers to effortlessly
-                                maintain their spaces, make informed decisions about their cleaning needs, and enjoy the ease of
-                                scheduling professional cleaning services online. Experience the difference with our commitment to
-                                excellence in every clean.                            </p>
+                                Notre mission est de redéfinir la commodité dans le domaine des services de nettoyage. Nous proposons une sélection
+                                sélection de solutions de nettoyage de qualité supérieure, associée à un service client exceptionnel, rapide et
+                                rendez-vous fiables et prix compétitifs. Notre objectif est de permettre aux clients de
+                                entretenir leurs espaces, prendre des décisions éclairées concernant leurs besoins de nettoyage et profiter de la facilité de
+                                planifier des services de nettoyage professionnels en ligne. Découvrez la différence avec notre engagement à
+                                l'excellence dans chaque nettoyage.
+                            </p>
                             <p className="font-normal text-base leading-6 text-gray-600 w-full lg:w-10/12 xl:w-9/12 mt-10">
-                                We are dedicated to establishing a trusted and dependable platform for those seeking top-tier
-                                cleaning services. Just as tech-savvy shoppers rely on us to find the best products and enjoy a
-                                seamless shopping journey, we aim to be the go-to destination for those seeking pristine spaces. Our
-                                ultimate goal is to exceed expectations, fostering loyalty and satisfaction among our valued
-                                customers. Experience the difference with our commitment to reliability and excellence in every
-                                clean.
+                                Nous nous engageons à établir une plate-forme fiable et fiable pour ceux qui recherchent un service de premier plan.
+                                services de nettoyage. Tout comme les acheteurs férus de technologie comptent sur nous pour trouver les meilleurs produits et profiter d'un
+                                parcours de shopping fluide, nous visons à être la destination incontournable pour ceux qui recherchent des espaces immaculés. Notre
+                                le but ultime est de dépasser les attentes, en favorisant la fidélité et la satisfaction de nos précieux
+                                clients. Découvrez la différence grâce à notre engagement envers la fiabilité et l'excellence dans chaque
+                                faire le ménage.
                             </p>
                         </div>
                         <div className="w-full lg:w-6/12">
@@ -300,11 +299,11 @@ const AboutUs: React.FC = () => {
                                     </div>
                                     <div className="">
                                         <p className="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800">
-                                            Team
+                                            Équipe
                                         </p>
                                         <p className="mt-2 font-normal text-base leading-6 text-gray-600">
-                                            We have a dedicated team that is online 24/7 to answer any
-                                            question and above all review your orders.
+                                            Nous avons une équipe dédiée qui est en ligne 24h/24 et 7j/7 pour répondre à toutes vos questions.
+                                            question et surtout revoir vos commandes.
                                         </p>
                                     </div>
                                 </div>
@@ -349,12 +348,13 @@ const AboutUs: React.FC = () => {
                                     </div>
                                     <div className="">
                                         <p className="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800">
-                                            Board
+                                            Conseil
                                         </p>
                                         <p className="mt-2 font-normal text-base leading-6 text-gray-600">
-                                            It is a long established fact that a reader will be
-                                            distracted by the readable content of a page when looking at
-                                            its layout.
+                                            Depuis des décennies, T-ZZO Board est à l'avant-garde de la révolution de
+                                            l'industrie du nettoyage. Notre engagement inébranlable envers l’excellence et
+                                            l’innovation nousdistingue en tant que leader dans le domaine.
+
                                         </p>
                                     </div>
                                 </div>
@@ -385,12 +385,14 @@ const AboutUs: React.FC = () => {
                                     </div>
                                     <div className="">
                                         <p className="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800">
-                                            Press
+                                            Presse
                                         </p>
                                         <p className="mt-2 font-normal text-base leading-6 text-gray-600">
-                                            It is a long established fact that a reader will be
-                                            distracted by the readable content of a page when looking at
-                                            its layout.
+                                            Conseil T-ZZO : faire la une des journaux dans le domaine du nettoyage des presses.
+                                            Reconnu par les leaders de l'industrie pour notre approche méticuleuse et nos
+                                            résultats supérieurs. Découvrez dès aujourd'hui la différence T-ZZO en matière de
+                                            nettoyage de presses
+
                                         </p>
                                     </div>
                                 </div>

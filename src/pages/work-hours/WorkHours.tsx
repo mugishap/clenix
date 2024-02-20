@@ -2,10 +2,14 @@ import Footer from '@/components/footer/Footer'
 import Navbar from '@/components/navbar/Navbar'
 import { hours } from '@/constants'
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const WorkHours: React.FC = () => {
     return (
         <div className='w-full flex flex-col min-h-screen'>
+            <Helmet>
+                <title>Heures de travail | T-ZZO</title>
+            </Helmet>
             <Navbar />
             <div className='flex flex-col items-center'>
                 <span className='text-secondary-blue text-2xl font-bold my-6'>Our Working Hours</span>
