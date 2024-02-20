@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         <title>Home | T-ZZO</title>
       </Helmet>
       <div className='w-full min-h-[calc(100vh_-_40vh)] md:min-h-[calc(100vh_-_20vh)] flex flex-col items-center relative justify-start pt-44' id='home-bg'>
-        <span className='text-primary-yellow text-base md:text-xl font-semibold my-8'>LE MEILLEUR SERVICE DE NETTOYAGE JAMAIS!</span>
+        <span className='text-primary-yellow text-base md:text-xl font-semibold my-8'>LE MEILLEUR SERVICE DE NETTOYAGE!</span>
         <span className='font-extrabold text-white text-4xl smlg:text-7xl text-center'>Nous sommes une entreprise certifiée</span>
         <div className='flex items-center gap-x-4 my-6'>
           <a href="#services" className='bg-primary-yellow hover:bg-white text-secondary-blue px-8 smlg:px-12 py-3 smlg:py-4 rounded-lg font-semibold text-base smlg:text-xl'>
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
             <img src={HomeCleaning} alt="" className='w-full lg:w-8/12' />
           </div>
           <div className='w-full md:w-6/12 bxl:w-4/12 md:ml-14 flex flex-col items-start'>
-            <span className='text-primary-blue font-semibold text-base sm:text-lg md:text-xl'>Qui nous sommes</span>
+            <span className='text-primary-blue font-semibold text-base sm:text-lg md:text-xl'>À propos de nous</span>
             <span className='my-6 text-secondary-blue font-bold text-lg sm:text-xl md:text-2xl lg:text-4xl'>
               Votre source de confiance pour des services de nettoyage de qualité supérieure
             </span>
@@ -68,10 +68,10 @@ const Home: React.FC = () => {
                 ))
               }
             </div>
-            <button className='bg-primary-yellow hover:bg-secondary-blue text-secondary-blue hover:text-white px-8 py-3 rounded-lg font-semibold text-lg my-4'>
+            <a href='#services' className='bg-primary-yellow hover:bg-secondary-blue text-secondary-blue hover:text-white px-8 py-3 rounded-lg font-semibold text-lg my-4'>
               Prenez notre service
               <BiRightArrowAlt className='text-2xl inline ml-2' />
-            </button>
+            </a>
           </div>
         </div>
       </div>

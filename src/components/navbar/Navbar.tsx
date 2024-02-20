@@ -33,10 +33,10 @@ const Navbar: React.FC = () => {
                 <span className='w-12 text-primary-blue 12 cursor-pointer h-12 rounded-full hover:bg-primary-blue hover:text-white duration-0 bg-secondary-gray flex items-center justify-center'>
                     <BiCart size={22} className='duration-0' />
                 </span>
-                <button className='px-8 py-3 rounded bg-primary-yellow text-black'
+                <button className='px-8 py-3 rounded bg-transparent text-black'
                     onClick={() => toast.error('This feature is not available yet.')}
                 >
-                    OBTENIR UN DEVIS
+                    {/* OBTENIR UN DEVIS */}
                 </button>
             </div>
             <BiMenu size={30} className='flex md:hidden cursor-pointer text-secondary-blue' onClick={() => setShowNavbar(true)} />

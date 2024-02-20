@@ -141,13 +141,17 @@ const Footer: React.FC = () => {
             <div className="relative flex justify-start md:justify-center md:items-end bg-secondary-gray mt-10 w-full">
                 <div className="flex py-20 pl-2 xs:px-4 md:px-6 xl:px-20 flex-col justify-start items-start md:justify-center md:items-center relative z-10">
                     <div className="flex  flex-col items-start justify-start xl:justify-center xl:space-x-8 xl:flex-row">
-                        <div className="flex justify-start items-center space-x-4">
-                            <div className="cursor-pointer w-12">
-                                <img src={Logo} alt="Logo in footer" className="rounded-full" />
+                        <div className="flex flex-col">
+                            <div className="flex justify-start items-center space-x-4">
+                                <div className="cursor-pointer w-12">
+                                    <img src={Logo} alt="Logo in footer" className="rounded-full" />
+                                </div>
+                                <p className="w-60 text-xl xl:text-2xl font-semibold leading-normal text-black">
+                                    T-ZZO
+                                </p>
                             </div>
-                            <p className="w-60 text-xl xl:text-2xl font-semibold leading-normal text-black">
-                                T-ZZO
-                            </p>
+                            Adresse: 565 81e Avenue  <br></br>
+                            H7V 3M3 Laval , Québec
                         </div>
                         <div className="mt-12 xl:mt-0 grid grid-cols-1 sm:grid-cols-3 gap-y-12 sm:gap-y-0 w-full md:w-auto sm:gap-x-20 md:gap-x-28 xl:gap-8">
                             <div className="sm:w-40 md:w-auto xl:w-72 flex justify-start items-start flex-col space-y-6">

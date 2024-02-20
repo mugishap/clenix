@@ -69,7 +69,7 @@ const Contact = () => {
                       </svg>
                     </div>
                     <p className="pl-4 text-white text-base">
-                      +250 (782) 307 144
+                      +1 (438) 773-3653
                     </p>
                   </div>
                   <div className="flex items-center">
@@ -96,8 +96,8 @@ const Contact = () => {
                     </p>
                   </div>
                   <p className="text-lg text-white pt-10 tracking-wide">
-                    KN 143 St <br />
-                    T-ZZO Inc
+                    Adresse: 565 81e Avenue  <br></br>
+                    H7V 3M3 Laval , Québec
                   </p>
                 </div>
               </div>
