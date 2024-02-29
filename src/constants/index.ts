@@ -215,7 +215,7 @@ export const hours = [
     {
         open: "8:00 AM",
         closes: "9:00 PM",
-        day: "Lund"
+        day: "Monday"
     },
     {
         open: "8:00 AM",
