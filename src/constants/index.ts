@@ -53,7 +53,7 @@ export const qualities = [
 
 export const offers = [
     {
-        name: "Nettoyages des tapis"
+        name: "Gusukura TAPIs"
     },
     {
         name: "Vider les corbeilles à déchets"
