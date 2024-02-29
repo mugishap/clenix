@@ -133,8 +133,7 @@ export const process = [
 export const team = [
     {
         image: Team1,
-        name: "Tom"
-        //name: "Richard Powell"
+        name: "Richard Powell"
     },
     {
         image: Team2,
