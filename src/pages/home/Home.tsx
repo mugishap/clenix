@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       </Helmet>
       <div className='w-full min-h-[calc(100vh_-_40vh)] md:min-h-[calc(100vh_-_20vh)] flex flex-col items-center relative justify-start pt-44' id='home-bg'>
         <span className='text-primary-yellow text-base md:text-xl font-semibold my-8'>LE MEILLEUR SERVICE DE NETTOYAGE!</span>
-        <span className='font-extrabold text-white text-4xl smlg:text-7xl text-center'>We are a certified enterprise</span>
+        <span className='font-extrabold text-white text-4xl smlg:text-7xl text-center'>Nous sommes une entreprise certifiée</span>
         <div className='flex items-center gap-x-4 my-6'>
           <a href="#services" className='bg-primary-yellow hover:bg-white text-secondary-blue px-8 smlg:px-12 py-3 smlg:py-4 rounded-lg font-semibold text-base smlg:text-xl'>
             Prenez notre service
