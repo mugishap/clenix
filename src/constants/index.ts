@@ -147,7 +147,7 @@ export const team = [
 
 export const plans = [
     {
-        name: "BASIC",
+        name: "BASIQUE",
         price: "19",
         offers: [
             {
@@ -189,7 +189,7 @@ export const plans = [
         ]
     },
     {
-        name: "PREMIUM",
+        name: "PRIME",
         price: "49",
         offers: [
             {

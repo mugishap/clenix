@@ -30,7 +30,7 @@ const Home: React.FC = () => {
             </button>
           </Link>
         </div>
-        <div className='absolute -bottom-64 lg:-bottom-44 bxl:-bottom-28 w-full hidden md:flex items-center justify-center gap-x-4 lg:gap-x-12'>
+        <div className='absolute -bottom-80 lg:-bottom-72 bxl:-bottom-64 w-full hidden md:flex items-center justify-center gap-x-4 lg:gap-x-12'>
           {
             qualities.map((quality, index) => (
               <div key={index} className='group shadow-lg hover:bg-primary-blue w-4/12 lg:w-3/12 bxl:w-1/5 p-6 mx-2 flex flex-col bg-white items-center py-12'>
@@ -75,7 +75,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className='bg-primary-blue px-1 msm:px-4 lg:px-10 xl:px-24 bxl:px-44 py-24 my-12 flex flex-col items-center' id="services">
+      <div className='bg-primary-blue px-1 msm:px-4 lg:px-10 xl:px-24 bxl:px-44 py-12 my-6 flex flex-col items-center' id="services">
         <span className='my-4 font-semibold text-lg text-primary-yellow'>Nos services</span>
         <span className='font-bold text-4xl text-center text-white'>
           Nos Résidentiels & Commercials
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
           }
         </div>
       </div>
-      <div className='bg-white py-10 md:py-24 px-2 smlg:px-8 lg:px-20 xl:px-44 flex flex-col items-center'>
+      <div className='bg-white py-12 px-2 smlg:px-8 lg:px-20 xl:px-44 flex flex-col items-center'>
         <span className='font-bold text-base md:text-xl text-primary-blue my-4'>Nos experts en activité</span>
         <span className='font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-secondary-blue my-4 text-center'>
           Rencontrez notre équipe d'experts
@@ -121,7 +121,7 @@ const Home: React.FC = () => {
           }
         </div>
       </div>
-      <div className='bg-secondary-gray py-24 px-2 md:px-10 bxl:px-44 flex flex-col items-center'>
+      <div className='bg-secondary-gray py-14 px-2 md:px-10 bxl:px-44 flex flex-col items-center'>
         <span className='font-bold text-base sm:text-xl my-4 text-primary-blue'>Plan tarifaire</span>
         <span className='my-4 font-bold text-lg smm:text-xl sm:text-3xl text-center text-secondary-blue'>
           Choisissez votre plan <br></br>
@@ -139,7 +139,7 @@ const Home: React.FC = () => {
                   </span>
                 </div>
                 <div className='relative w-full flex flex-col items-center py-10'>
-                  <button className="group-hover:bg-secondary-blue bg-primary-blue px-8 py-3 rounded-xl text-white capitalize text-base lg:text-lg absolute -top-12 z-30">{plan.name} PLAN</button>
+                  <button className="group-hover:bg-secondary-blue bg-primary-blue px-8 py-3 rounded-xl text-white capitalize text-base lg:text-lg absolute -top-12 z-30">{plan.name}</button>
                   {
                     plan.offers.map((offer, index) => (
                       <div className='flex items-center my-2' key={index}>
@@ -173,16 +173,11 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className='w-11/12 md:w-10/12 lg:w-8/12 z-[2] flex flex-col lg:flex-row items-center justify-around'>
-          <div className='flex flex-col w-full lg:w-1/2 text-white justify-center'>
+          <div className='flex flex-col w-full text-white justify-center'>
             <span className='my-2'>VENTE 20% DE RÉDUCTION</span>
-            <span className='font-extrabold text-4xl text-white'>Abonnez-vous à notre newsletter</span>
+            <span className='font-extrabold text-4xl text-white'>Réservez Votre Nettoyage Aujourd'hui !</span>
           </div>
-          <div className='flex w-full lg:w-1/2 items-center justify-end'>
-            <div className='w-11/12 md:w-8/12 flex lg:mt-0 mt-6'>
-              <input type="text" className='w-11/12 outline-none border-none rounded-l-lg p-4' placeholder='Entrez votre email ici' />
-              <button className='p-4 rounded-r-lg text-white cursor-pointer bg-[#010f1c]'>S'abonner</button>
-            </div>
-          </div>
+          
         </div>
       </div>
       <Footer />

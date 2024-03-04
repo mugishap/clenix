@@ -13,8 +13,8 @@ const Navbar: React.FC = () => {
 
     return (
         <div className='flex items-center px-3 lg:px-10 mplg:px-36 bg-white py-2 justify-between'>
-            <img src={LogoText} className='flex md:hidden smlg:flex w-44 smm:w-64' alt="" />
-            <img src={Logo} className='hidden md:flex smlg:hidden w-14' alt="" />
+            <Link to="/"> <img src={LogoText} className='flex md:hidden smlg:flex w-44 smm:w-64' alt="" /></Link>
+            <Link to="/"> <img src={Logo} className='hidden md:flex smlg:hidden w-14' alt="" /></Link>
             <div className='hidden md:flex items-center gap-x-4'>
                 {
                     navbarLinks.map((link: INavbarLink, index: number) => {
