@@ -246,15 +246,12 @@ Puis l’apparence  d’un espace de travail plus propre a un impacte énorme su
                                 Notre mission
                             </h2>
                             <p className="font-normal text-base leading-6 text-gray-600 mt-6 w-full lg:w-10/12 xl:w-9/12">
-                                Notre mission est de redéfinir la commodité dans le domaine des services de nettoyage. Nous proposons une sélection
-                                sélection de solutions de nettoyage de qualité supérieure, associée à un service client exceptionnel, rapide et
-                                rendez-vous fiables et prix compétitifs. Notre objectif est de permettre aux clients de
-                                entretenir leurs espaces, prendre des décisions éclairées concernant leurs besoins de nettoyage et profiter de la facilité de
+                                Notre mission est de redéfinir la commodité dans le domaine des services de nettoyage. Notre objectif est d'aller plus loin en offrant des services impecables a nos clients selon les horaires de leurs choix et aux prix tres aventageux. Nous prenons des décisions éclairées concernant leurs besoins de nettoyage et profiter de la facilité de
                                 planifier des services de nettoyage professionnels en ligne. Découvrez la différence avec notre engagement à
                                 l'excellence dans chaque nettoyage.
                             </p>
                             <p className="font-normal text-base leading-6 text-gray-600 w-full lg:w-10/12 xl:w-9/12 mt-10">
-                                Nous nous engageons à établir une plate-forme fiable et fiable pour ceux qui recherchent un service de premier plan.
+                                Nous nous engageons à établir une plate-forme pour ceux qui recherchent un service de premier plan.
                                 services de nettoyage. Tout comme les acheteurs férus de technologie comptent sur nous pour trouver les meilleurs produits et profiter d'un
                                 parcours de shopping fluide, nous visons à être la destination incontournable pour ceux qui recherchent des espaces immaculés. Notre
                                 le but ultime est de dépasser les attentes, en favorisant la fidélité et la satisfaction de nos précieux
