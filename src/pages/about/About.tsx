@@ -19,13 +19,13 @@ const AboutUs: React.FC = () => {
                                 Revitalisez votre espace avec nos services de nettoyage experts. Profitez des résultats impeccables que vous méritez.
                             </h2>
                             <p className="font-normal text-base leading-6 text-gray-600 mt-6">
-                                T-ZZO : Bienvenue dans notre monde d'espaces immaculés et de vie sans effort ! Vivez l'ultime
-                                commodité avec nos services de nettoyage de premier ordre. Tout comme les achats en ligne redéfinissent la commodité,
-                                nous redéfinissons la propreté. Dites adieu aux tracas et profitez de la joie d'un nettoyage méticuleux
-                                espace. Notre équipe d'experts veille à ce que chaque coin et recoin soit étincelant, offrant un niveau de
-                                une propreté qui dépasse les attentes. Avec une réservation facile, une planification flexible et un service de premier ordre
-                                service, nous faisons de l’entretien de votre espace un jeu d’enfant. Rejoignez-nous dans ce voyage vers des espaces vierges
-                                et une vie sans effort. Prenez rendez-vous aujourd'hui et découvrez la différence!
+
+Bienvenue dans notre monde d’espace immaculée et de vie sans effort! Notre équipe d’experts en nettoyage vous offre un service du premier qualité qui dépasse vos attentes. 
+
+Chez T-zzo nous savons bien que le temps passe vite, c’est pourquoi nous sommes toujours là pour vous faciliter la vie par nos services de bonne qualité. 
+
+Puis l’apparence  d’un espace de travail plus propre a un impacte énorme sur la perception d’autrui d’une entreprise, et qu’elle peut influencer significativement ses revenus, notre principal objectif est de garder cet espace plus propre ce qui rends au employés d’être plus heureux et d’avantage motivés lorsqu’ils travaillent dans un environnement propre et ordonné.
+                                
                             </p>
                         </div>
                         <div className="w-full flex justify-center">
