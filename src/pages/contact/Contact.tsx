@@ -69,7 +69,7 @@ const Contact = () => {
                       </svg>
                     </div>
                     <p className="pl-4 text-white text-base">
-                      +1 (438) 773-3653
+                      +1 (514)4300215
                     </p>
                   </div>
                   <div className="flex items-center">
