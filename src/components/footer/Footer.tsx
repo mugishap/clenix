@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
         },
     ];
 
-    const links: ILink[] = [
+   // const links: ILink[] = [
         {
             name: "Conditions d'utilisation",
             path: "#"
@@ -236,7 +236,10 @@ const Footer: React.FC = () => {
                                 <Facebook />
                             </a>
                             <a className="text-black hover:text-primary-blue w-6" href="http://github.com/mugishap" target={"_blank"}>
-                                <GitHub />
+                                <WhatsApp />
+                            </a>
+                            <a className="text-black hover:text-primary-blue w-6" href="http://github.com/mugishap" target={"_blank"}>
+                                <Instagram />
                             </a>
                         </div>
                     </div>
