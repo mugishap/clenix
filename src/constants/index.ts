@@ -12,8 +12,8 @@ import { PiBathtub } from "react-icons/pi";
 export const navbarLinks: INavbarLink[] = [
     {
         href: "/",
-        //label: "Accueil"
-        label: "About us"
+       label: "Accueil"
+       
     },
     {
         href: "/about-us",
