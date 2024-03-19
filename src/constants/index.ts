@@ -84,7 +84,7 @@ export const services = [
     },
     {
         icon: GiVacuumCleaner,
-        title: "Nettoyage des sols"
+        title: "Nettoyage des planchers"
     },
     {
         icon: PiBathtub,
