@@ -100,7 +100,7 @@ export const services = [
     },
     {
         icon: IoBrushOutline,
-        title: "Nettoyage de la chambre"
+        title: "Nettoyage des chambres"
     },
     {
         icon: MdCleaningServices,
