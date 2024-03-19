@@ -76,7 +76,7 @@ export const offers = [
 export const services = [
     {
         icon: GiSpray,
-        title: "Nettoyage de bureaux"
+        title: "Nettoyage deS bureaux"
     },
     {
         icon: GiHouse,
