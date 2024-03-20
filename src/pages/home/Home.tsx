@@ -95,7 +95,7 @@ const Home: React.FC = () => {
           }
         </div>
       </div>
-      <div className='bg-white py-12 px-2 smlg:px-8 lg:px-20 xl:px-44 flex flex-col items-center'>
+      {/* <div className='bg-white py-12 px-2 smlg:px-8 lg:px-20 xl:px-44 flex flex-col items-center'>
         <span className='font-bold text-base md:text-xl text-primary-blue my-4'>Nos experts en activité</span>
         <span className='font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-secondary-blue my-4 text-center'>
           Rencontrez notre équipe d'experts
@@ -120,8 +120,8 @@ const Home: React.FC = () => {
             ))
           }
         </div>
-      </div>
-      <div className='bg-secondary-gray py-14 px-2 md:px-10 bxl:px-44 flex flex-col items-center'>
+      </div> */}
+      {/* <div className='bg-secondary-gray py-14 px-2 md:px-10 bxl:px-44 flex flex-col items-center'>
         <span className='font-bold text-base sm:text-xl my-4 text-primary-blue'>Plan tarifaire</span>
         <span className='my-4 font-bold text-lg smm:text-xl sm:text-3xl text-center text-secondary-blue'>
           Choisissez votre plan <br></br>
@@ -155,7 +155,7 @@ const Home: React.FC = () => {
             ))
           }
         </div>
-      </div>
+      </div> */}
       <div className='w-full py-[70px] pb-[65px] flex bg-[#0989ff] relative items-center justify-center'>
         <div>
           <img className='absolute z-[1] opacity-[0.4] top-0 left-0 mix-blend-luminosity max-w-full' src={Subscribe1} alt="" />

@@ -3,6 +3,7 @@ import { Slide } from "react-awesome-reveal";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { Logo } from "../../assets";
+import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 interface ILink {
     name: string,
@@ -71,32 +72,32 @@ const Footer: React.FC = () => {
             path: "#"
         },
         {
-            name: "FAQ",
+            name: "",
             path: "#"
         },
         {
-            name: "Carrières",
+            name: "",
             path: "#"
         },
         {
-            name: "Blog",
+            name: "",
             path: "#"
         },
     ];
 
     const getStarted: ILink[] = [
-        {
-            name: "Votre compte",
-            path: "#"
-        },
-        {
-            name: "Des lignes directrices",
-            path: "#"
-        },
-        {
-            name: "Citations",
-            path: "#"
-        },
+        // {
+        //     name: "Votre compte",
+        //     path: "#"
+        // },
+        // {
+        //     name: "Des lignes directrices",
+        //     path: "#"
+        // },
+        // {
+        //     name: "Citations",
+        //     path: "#"
+        // },
         {
             name: "Contactez-nous",
             path: "#"
@@ -104,33 +105,33 @@ const Footer: React.FC = () => {
     ];
 
     const resources: ILink[] = [
-        {
-            name: "Tarifs",
-            path: "#"
-        },
-        {
-            name: "Commencer à vendre",
-            path: "#"
-        },
-        {
-            name: "Aide",
-            path: "#"
-        },
+        // {
+        //     name: "Tarifs",
+        //     path: "#"
+        // },
+        // {
+        //     name: "Commencer à vendre",
+        //     path: "#"
+        // },
+        // {
+        //     name: "Aide",
+        //     path: "#"
+        // },
     ];
 
-   // const links: ILink[] = [
-        {
-            name: "Conditions d'utilisation",
-            path: "#"
-        },
-        {
-            name: "Politique de confidentialité",
-            path: "#"
-        },
-        {
-            name: "Accord d'adhésion",
-            path: "#"
-        },
+   const links: ILink[] = [
+        // {
+        //     name: "Conditions d'utilisation",
+        //     path: "#"
+        // },
+        // {
+        //     name: "Politique de confidentialité",
+        //     path: "#"
+        // },
+        // {
+        //     name: "Accord d'adhésion",
+        //     path: "#"
+        // },
         {
             name: "Plan du site",
             path: "#"
@@ -235,11 +236,11 @@ const Footer: React.FC = () => {
                             <a href="https://web.facebook.com/beni.precieux" className="text-black hover:text-primary-blue w-6" target={"_blank"}>
                                 <Facebook />
                             </a>
-                            <a className="text-black hover:text-primary-blue w-6" href="http://github.com/mugishap" target={"_blank"}>
-                                <WhatsApp />
+                            <a className="text-black hover:text-primary-blue w-6" href="https://wa.me/14387733653" target={"_blank"}>
+                                <BsWhatsapp />
                             </a>
                             <a className="text-black hover:text-primary-blue w-6" href="http://github.com/mugishap" target={"_blank"}>
-                                <Instagram />
+                                <BsInstagram />
                             </a>
                         </div>
                     </div>
