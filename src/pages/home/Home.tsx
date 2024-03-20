@@ -1,10 +1,10 @@
 import { HomeCleaning } from '@/assets'
 import Footer from '@/components/footer/Footer'
 import Navbar from '@/components/navbar/Navbar'
-import { offers, plans, qualities, services, team } from '@/constants'
+import { offers, qualities, services } from '@/constants'
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { BiCheck, BiRightArrowAlt, BiShareAlt } from 'react-icons/bi'
+import { BiCheck, BiRightArrowAlt } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import { Plane, Subscribe1, Subscribe2, Subscribe3, Subscribe4 } from '../../assets'
 
