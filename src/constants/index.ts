@@ -20,7 +20,7 @@ export const navbarLinks: INavbarLink[] = [
         label: "À propos de nous"
     },
     {
-        href: "#services",
+        href: "/#services",
         label: "Services"
     },
     {
