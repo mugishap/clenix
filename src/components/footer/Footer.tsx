@@ -131,10 +131,10 @@ const Footer: React.FC = () => {
         //     name: "Accord d'adhésion",
         //     path: "#"
         // },
-        {
-            name: "Plan du site",
-            path: "#"
-        },
+        // {
+        //     name: "Plan du site",
+        //     path: "#"
+        // },
     ];
     return (
         <Slide direction="up" cascade triggerOnce style={{ width: "100%" }}>
@@ -191,7 +191,7 @@ const Footer: React.FC = () => {
                             </div>
                             <div className=" xl:w-72 flex justify-start items-start flex-col space-y-6">
                                 <h2 className="text-base xl:text-xl font-bold xl:font-semibold leading-4 xl:leading-5 text-black">
-                                    Resources
+                                    {/* Resources */}
                                 </h2>
                                 {resources.map((text: ILink, index: number) => {
                                     return (
