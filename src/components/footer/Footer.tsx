@@ -1,9 +1,8 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
-import toast from "react-hot-toast";
+import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { Logo } from "../../assets";
-import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 interface ILink {
     name: string,
