@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
     const Community: ILink[] = [
         {
             name: "À propos de nous",
-            path: "#"
+            path: "/about-us"
         },
         {
             name: "",
@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
         // },
         {
             name: "Contactez-nous",
-            path: "#"
+            path: "/contact-us"
         },
     ];
 
@@ -119,7 +119,7 @@ const Footer: React.FC = () => {
         // },
     ];
 
-   const links: ILink[] = [
+    const links: ILink[] = [
         // {
         //     name: "Conditions d'utilisation",
         //     path: "#"
@@ -148,11 +148,14 @@ const Footer: React.FC = () => {
                                     <img src={Logo} alt="Logo in footer" className="rounded-full" />
                                 </div>
                                 <p className="w-60 text-xl xl:text-2xl font-semibold leading-normal text-black">
-                                    T-ZZO
+                                    T-ZZO INC
                                 </p>
                             </div>
                             Adresse: 565 81e Avenue, Suite 302  <br></br>
                             H7V 3M3 Laval , Québec
+                            <br></br>
+                            info@tzzo.ca <br></br>
+                            mathierry@tzoo.ca
                         </div>
                         <div className="mt-12 xl:mt-0 grid grid-cols-1 sm:grid-cols-3 gap-y-12 sm:gap-y-0 w-full md:w-auto sm:gap-x-20 md:gap-x-28 xl:gap-8">
                             <div className="sm:w-40 md:w-auto xl:w-72 flex justify-start items-start flex-col space-y-6">
@@ -162,7 +165,6 @@ const Footer: React.FC = () => {
                                 {Community.map((community: ILink, index: number) => {
                                     return (
                                         <Link
-                                            onClick={() => toast.error("This feature is not available yet.")}
                                             to={community.path}
                                             className={`text-left text-base hover:text-primary-blue leading-none ${window.location.pathname === community.path ? "text-primary-blue" : "text-black"}`}
                                             key={index}
@@ -179,7 +181,6 @@ const Footer: React.FC = () => {
                                 {getStarted.map((text: ILink, index: number) => {
                                     return (
                                         <Link
-                                            onClick={() => toast.error("This feature is not available yet.")}
                                             to={text.path}
                                             className={`text-left text-base hover:text-primary-blue leading-none ${window.location.pathname === text.path ? "text-primary-blue" : "text-black"}`}
                                             key={index}
@@ -196,7 +197,6 @@ const Footer: React.FC = () => {
                                 {resources.map((text: ILink, index: number) => {
                                     return (
                                         <Link
-                                            onClick={() => toast.error("This feature is not available yet.")}
                                             to={text.path}
                                             className={`text-left text-base hover:text-primary-blue leading-none ${window.location.pathname === text.path ? "text-primary-blue" : "text-black"}`}
                                             key={index}
@@ -219,7 +219,6 @@ const Footer: React.FC = () => {
                             {links.map((link: ILink, index: number) => {
                                 return (
                                     <Link
-                                        onClick={() => toast.error("This feature is not available yet.")}
                                         to={link.path}
                                         className="text-base leading-none text-black hover:text-primary-blue"
                                         key={index}
