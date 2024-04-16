@@ -20,6 +20,9 @@ const MobileNavbar: React.FC = () => {
                         </Link>
                     ))
                 }
+                <a href={"https://drummond.web-dns1.com:2096/cpsess3563286803/3rdparty/roundcube/index.php?_task=mail&_mbox=INBOX"} className='my-3 text-lg'>
+                    Mail
+                </a>
                 <div className='flex flex-col gap-y-6'>
                     <span className='w-12 text-primary-blue cursor-pointer h-12 rounded-full hover:bg-primary-blue hover:text-white duration-0 bg-secondary-gray flex items-center justify-center'>
                         <BiSearch size={22} className='duration-0' />

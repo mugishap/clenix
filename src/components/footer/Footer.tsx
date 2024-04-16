@@ -228,16 +228,16 @@ const Footer: React.FC = () => {
                             })}
                         </div>
                         <div className="flex  justify-start md:justify-end items-start  w-full md:w-auto md:items-center space-x-6 ">
-                            <a href="https://twitter.com/Pre_mugisha" className="text-black hover:text-primary-blue w-6" target={"_blank"}>
+                            <a href="https://twitter.com/TzzoInc" className="text-black hover:text-primary-blue w-6" target={"_blank"}>
                                 <Twitter />
                             </a>
-                            <a href="https://web.facebook.com/beni.precieux" className="text-black hover:text-primary-blue w-6" target={"_blank"}>
+                            <a href="https://www.facebook.com/share/P1ge6sLmcQASeP23/?mibextid=qi2Omg" className="text-black hover:text-primary-blue w-6" target={"_blank"}>
                                 <Facebook />
                             </a>
-                            <a className="text-black hover:text-primary-blue w-6" href="https://wa.me/14387733653" target={"_blank"}>
+                            <a className="text-black hover:text-primary-blue w-6" href="https://wa.me/+14387733653" target={"_blank"}>
                                 <BsWhatsapp />
                             </a>
-                            <a className="text-black hover:text-primary-blue w-6" href="http://github.com/mugishap" target={"_blank"}>
+                            <a className="text-black hover:text-primary-blue w-6" href="https://www.instagram.com/tzzoinc/" target={"_blank"}>
                                 <BsInstagram />
                             </a>
                         </div>
