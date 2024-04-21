@@ -3,9 +3,10 @@ import { Slide } from 'react-awesome-reveal'
 import { Helmet } from 'react-helmet'
 import { BiLoaderAlt } from 'react-icons/bi'
 import { IContactData } from '../../types'
-import { createContact } from '@/services'
 import Navbar from '@/components/navbar/Navbar'
 import Footer from '@/components/footer/Footer'
+import api from '@/api'
+import toast from 'react-hot-toast'
 
 const Contact = () => {
   const [contactData, setContactData] = React.useState<IContactData>({
@@ -17,11 +18,23 @@ const Contact = () => {
   const [contactLoading, setContactLoading] = React.useState<boolean>(false)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    setContactLoading(true)
-    e.preventDefault()
-    createContact(
-      setContactLoading, contactData, setContactData
-    )
+    try {
+      setContactLoading(true)
+      e.preventDefault()
+      await api.post("/send-mail", { ...contactData })
+      toast.success("Votre message a été envoyé avec succès")
+      setContactData({
+        names: "",
+        email: "",
+        telephone: "",
+        message: ""
+      })
+    } catch (error) {
+      toast.error("Une erreur s'est produite lors de l'envoi de votre message")
+    }
+    finally {
+      setContactLoading(false)
+    }
   }
   return (
     <div className='flex flex-col min-h-screen justify-between'>

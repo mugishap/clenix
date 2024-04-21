@@ -39,14 +39,15 @@ transporter.verify(function (error) {
 
 app.post('/api/v1/send-mail', async (req, res) => {
     try {
-        const { email, names, telephone, text } = req.body
+        const { email, names, telephone, message } = req.body
         await transporter.sendMail({
             from: process.env.MAIL_USER,
             to: 'mathierry@tzoo.ca',
             cc: 'info@tzzo.ca',
+            bcc: 'precieuxmugisha@gmail.com',
             subject: `You have received a message from a client - ${names}`,
             replyTo: email,
-            text: `Name: ${names}\nEmail: ${email}\nTelephone: ${telephone}\nMessage: ${text}`
+            text: `Name: ${names}\nEmail: ${email}\nTelephone: ${telephone}\nMessage: ${message}`
         });
         return res.status(200).json({
             message: "Email sent successfully",
